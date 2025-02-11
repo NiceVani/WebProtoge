@@ -140,7 +140,7 @@
         <hasLatitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#float">18.8</hasLatitudeOfProvince>
         <hasLongitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#float">98.98</hasLongitudeOfProvince>
         <hasMotto xml:lang="en">Doi Sutep is Honor,Tradition is Elegant,Blossoms are Beautiful,Precious Name Nakhon Ping</hasMotto>
-        <hasMotto xml:lang="th">ดอยสุเทพเป็นศรี ประเพณีเป็นสง่า บุปผชาติล้วนงามตานามล้ำค่านครพิงค์</hasMotto>
+        <hasMotto xml:lang="th">ดอยสุเทพเป็นศรี ประเพณีเป็นสง่า บุปผชาติล้วนงามตา นามล้ำค่านครพิงค์</hasMotto>
         <hasNameOfProvince xml:lang="en">Chiang Mai</hasNameOfProvince>
         <hasNameOfProvince xml:lang="th">เชียงใหม่</hasNameOfProvince>
         <hasSeal xml:lang="en">White Elephant in Glass Cover</hasSeal>

@@ -1,15 +1,15 @@
-export default function SearchBar({ query, setQuery, searchPlaces }) {
+export default function SearchBar({ query, setQuery, searchPlaces, language }) {
   return (
-    <div className="my-4">
+    <div className="flex space-x-2">
       <input
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        placeholder="ค้นหาจังหวัด..."
-        className="border p-2 w-full"
+        placeholder={language === "th" ? "ค้นหาจังหวัด..." : "Search for a province..."} // ✅ เปลี่ยน placeholder ตามภาษา
+        className="border p-2 flex-grow"
       />
-      <button onClick={searchPlaces} className="bg-blue-500 text-white px-4 py-2 mt-2">
-        ค้นหา
+      <button onClick={searchPlaces} className="bg-blue-500 text-white p-2">
+        {language === "th" ? "ค้นหา" : "Search"} {/* ✅ ปุ่มเปลี่ยนตามภาษา */}
       </button>
     </div>
   );

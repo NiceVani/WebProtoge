@@ -15,23 +15,33 @@ def get_provinces():
     
     for province in ontology.individuals():
         if "ThaiProvince" in [cls.name for cls in province.is_a]:  # ตรวจสอบว่าเป็นจังหวัด
+            
+            # ดึงค่า traditional names และแยกภาษา
+            has_traditional_names = getattr(province, "hasTraditionalNameOfProvince", [])
+            traditional_names_en = [name for name in has_traditional_names if name.isascii()]  # ชื่ออังกฤษ
+            traditional_names_th = [name for name in has_traditional_names if not name.isascii()]  # ชื่อไทย
+
             data = {
                 "name_en": getattr(province, "hasNameOfProvince", ["Unknown"])[0],  
                 "name_th": getattr(province, "hasNameOfProvince", ["Unknown"])[1] if len(getattr(province, "hasNameOfProvince", [])) > 1 else "Unknown",  
                 "motto_en": getattr(province, "hasMotto", ["Unknown"])[0],
                 "motto_th": getattr(province, "hasMotto", ["Unknown"])[1] if len(getattr(province, "hasMotto", [])) > 1 else "Unknown",
-                "flower": [f for f in getattr(province, "hasFlower", ["Unknown"])],  # รองรับหลายค่า
-                "tree": [t for t in getattr(province, "hasTree", ["Unknown"])],  # รองรับหลายค่า
+                "flower_en": getattr(province, "hasFlower", ["Unknown"])[0] if len(getattr(province, "hasFlower", [])) > 0 else "Unknown",
+                "flower_th": getattr(province, "hasFlower", ["Unknown"])[1] if len(getattr(province, "hasFlower", [])) > 1 else "Unknown",
+                "tree_en":  getattr(province, "hasTree", ["Unknown"])[0] if len(getattr(province, "hasTree", [])) > 0 else "Unknown",
+                "tree_th":  getattr(province, "hasTree", ["Unknown"])[1] if len(getattr(province, "hasTree", [])) > 1 else "Unknown",
                 "seal_en": getattr(province, "hasSeal", ["Unknown"])[0],
                 "seal_th": getattr(province, "hasSeal", ["Unknown"])[1] if len(getattr(province, "hasSeal", [])) > 1 else "Unknown",
                 "latitude": getattr(province, "hasLatitudeOfProvince", ["Unknown"])[0],
                 "longitude": getattr(province, "hasLongitudeOfProvince", ["Unknown"])[0],
-                "traditional_names": getattr(province, "hasTraditionalNameOfProvince", []),
-                "website":getattr(province,"hasURLOfProvince",[])
+                "traditional_names_en": traditional_names_en,  # ✅ เก็บเป็น list
+                "traditional_names_th": traditional_names_th,  # ✅ เก็บเป็น list
+                "website": getattr(province, "hasURLOfProvince", "Unknown")  # ถ้าไม่มีให้เป็น Unknown
             }
             provinces.append(data)
     
     return provinces
+
 
 
 # API ดึงข้อมูลจังหวัดทั้งหมด

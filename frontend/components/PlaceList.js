@@ -1,36 +1,54 @@
-export default function PlaceList({ places }) {
+export default function PlaceList({ places, language }) {
   return (
     <ul className="mt-4">
       {places && places.length > 0 ? (
         places.map((place, index) => (
           <li key={index} className="border p-2 mb-2">
-            <h2 className="text-lg font-bold">{place.name_th} ({place.name_en})</h2>
-            <p><strong>คำขวัญ:</strong> {place.motto_th} ({place.motto_en})</p>
-            
-            {/* ✅ แสดงหลายค่า (Array) */}
-            <p><strong>ต้นไม้ประจำจังหวัด:</strong> {place.tree.length > 0 ? place.tree.join(", ") : "ไม่ระบุ"}</p>
-            <p><strong>ดอกไม้ประจำจังหวัด:</strong> {place.flower.length > 0 ? place.flower.join(", ") : "ไม่ระบุ"}</p>
+            <h2 className="text-lg font-bold">
+              {language === "th" ? place.name_th : place.name_en}
+            </h2>
 
-            <p><strong>ตราประจำจังหวัด:</strong> {place.seal_th} ({place.seal_en})</p>
-            
-            {/* ✅ แสดงชื่อจังหวัดโบราณ */}
-            <p><strong>ชื่อจังหวัดโบราณ:</strong> 
-              {place.traditional_names.length > 0 
-                ? place.traditional_names.join(", ") 
-                : "ไม่ระบุ"}
+            {place.traditional_name && (
+              <p>
+                <strong>{language === "th" ? "ชื่อโบราณ:" : "Traditional Name:"}</strong>{" "}
+                {place.traditional_name.join(", ")}
+              </p>
+            )}
+
+            <p>
+              <strong>{language === "th" ? "คำขวัญ:" : "Motto:"}</strong>{" "}
+              {language === "th" ? place.motto_th : place.motto_en}
             </p>
 
-            <p><strong>เว็บไซต์:</strong> 
-              {place.website !== "N/A" 
-                ? <a href={place.website} className="text-blue-500">{place.website}</a> 
-                : "ไม่ระบุ"}
+            <p>
+              <strong>{language === "th" ? "ต้นไม้ประจำจังหวัด:" : "Provincial Tree:"}</strong>{" "}
+              {place.tree.length > 0 ? (language === "th" ? place.tree[1] : place.tree[0]) : language === "th" ? "ไม่ระบุ" : "Not specified"}
+            </p>
+            <p>
+              <strong>{language === "th" ? "ดอกไม้ประจำจังหวัด:" : "Provincial Flower:"}</strong>{" "}
+              {place.flower.length > 0 ? (language === "th" ? place.flower[1] : place.flower[0]) : language === "th" ? "ไม่ระบุ" : "Not specified"}
             </p>
 
-            <p><strong>พิกัด:</strong> ละติจูด {place.latitude}, ลองจิจูด {place.longitude}</p>
+
+            <p>
+              <strong>{language === "th" ? "ตราประจำจังหวัด:" : "Provincial Seal:"}</strong>{" "}
+              {language === "th" ? place.seal_th : place.seal_en}
+            </p>
+
+            <p>
+              <strong>{language === "th" ? "พิกัด:" : "Coordinates:"}</strong>
+              {language === "th" ? "ละติจูด" : "Latitude"} {place.latitude},
+              {language === "th" ? "ลองจิจูด" : "Longitude"} {place.longitude}
+            </p>
+            <p><strong>{language === "th" ? "เว็บไซต์: " : "Website: "}</strong>
+              {place.website !== "N/A"
+                ? <a href={place.website} className="text-blue-500">{place.website}</a>
+                : "ไม่ระบุ"}
+            </p>
           </li>
         ))
       ) : (
-        <p>ไม่พบข้อมูลจังหวัด</p>
+        <p>{language === "th" ? "ไม่พบข้อมูลจังหวัด" : "No province data found"}</p>
       )}
     </ul>
   );
