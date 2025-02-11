@@ -1,0 +1,23 @@
+# ไฟล์และโฟลเดอร์ที่ไม่ต้องการให้ถูกอัปโหลด
+
+# ไฟล์ Python Virtual Environment
+.venv
+venv
+__pycache__
+*.pyc
+*.pyo
+
+# Node.js dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+
+# ไฟล์ของ Next.js และ Build Output
+.next
+out
+dist
+
+# ไฟล์ระบบ
+.DS_Store
+Thumbs.db
+.env
