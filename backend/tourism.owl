@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2025/0/tourism#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2025/0/tourism"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:tourism="http://www.semanticweb.org/user/ontologies/2025/0/tourism#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2025/0/tourism"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/0/tourism#hasFlower -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/0/tourism#hasFlower">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/0/tourism#hasImangeOfProvince -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/0/tourism#hasImangeOfProvince">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/0/tourism#hasLatitudeOfProvince -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/0/tourism#hasLatitudeOfProvince">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/0/tourism#hasLongitudeOfProvince -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/0/tourism#hasLongitudeOfProvince">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/0/tourism#hasMotto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/0/tourism#hasMotto">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/0/tourism#hasNameOfProvince -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/0/tourism#hasNameOfProvince">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/0/tourism#hasSeal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/0/tourism#hasSeal">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/0/tourism#hasTraditionalNameOfProvince -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/0/tourism#hasTraditionalNameOfProvince">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/0/tourism#hasTree -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/0/tourism#hasTree">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/0/tourism#hasURLOfProvince -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/0/tourism#hasURLOfProvince">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/0/tourism#ThaiProvince -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/0/tourism#ThaiProvince"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/0/tourism#ChiangMai-->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/0/tourism#ChaiMai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/0/tourism#ThaiProvince"/>
+        <hasFlower xml:lang="en">Bastard Teak</hasFlower>
+        <hasFlower xml:lang="th">ทองกวาว</hasFlower>
+        <hasImangeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chiangmai.jpg</hasImangeOfProvince>
+        <hasLatitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#float">18.8</hasLatitudeOfProvince>
+        <hasLongitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#float">98.98</hasLongitudeOfProvince>
+        <hasMotto xml:lang="en">Doi Sutep is Honor,Tradition is Elegant,Blossoms are Beautiful,Precious Name Nakhon Ping</hasMotto>
+        <hasMotto xml:lang="th">ดอยสุเทพเป็นศรี ประเพณีเป็นสง่า บุปผชาติล้วนงามตานามล้ำค่านครพิงค์</hasMotto>
+        <hasNameOfProvince xml:lang="en">Chiang Mai</hasNameOfProvince>
+        <hasNameOfProvince xml:lang="th">เชียงใหม่</hasNameOfProvince>
+        <hasSeal xml:lang="en">White Elephant in Glass Cover</hasSeal>
+        <hasSeal xml:lang="th">ช้างเผือกในเรือนแก้ว</hasSeal>
+        <hasTraditionalNameOfProvince xml:lang="en">Jeang Mai</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="en">Nop Buri Sri Nakhon Ping Chiang Mai</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="en">Rattana Tingsa Api Nawaburi Chiang Mai</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="en">Veang Ping</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">นพบุรีศรีนครพิงค์เชียงใหม่</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">รัตนติงสาอภินวบุรีเชียงใหม่</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">เจียงใหม่</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">เวียงพิงค์</hasTraditionalNameOfProvince>
+        <hasTree xml:lang="en">Bastard Teak</hasTree>
+        <hasTree xml:lang="th">ทองกวาว</hasTree>
+        <hasURLOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.chiangmai.go.th</hasURLOfProvince>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">เชียงใหม่</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/0/tourism#NakhonSawan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/0/tourism#NakhonSawan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/0/tourism#ThaiProvince"/>
+        <hasFlower xml:lang="en">Lagerstroemialoudon</hasFlower>
+        <hasFlower xml:lang="th">เสลา</hasFlower>
+        <hasImangeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nakhonsawan.jpg</hasImangeOfProvince>
+        <hasLatitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.7</hasLatitudeOfProvince>
+        <hasLongitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.07</hasLongitudeOfProvince>
+        <hasMotto xml:lang="en">Quad CityRiver, Dragon Parade,Bungborapet Rest, Good Taste Fish of Paknampho</hasMotto>
+        <hasMotto xml:lang="th">เมืองสี่แคว แห่มังกร พักผ่อนบึงบอระเพ็ด ปลารสเด็ดปากน้ำโพ</hasMotto>
+        <hasNameOfProvince xml:lang="en">Nakhon Sawan</hasNameOfProvince>
+        <hasNameOfProvince xml:lang="th">นครสวรรค์</hasNameOfProvince>
+        <hasSeal xml:lang="en">Sky Castle</hasSeal>
+        <hasSeal xml:lang="th">วิมานลอย</hasSeal>
+        <hasTraditionalNameOfProvince xml:lang="en">Chon Ta Wan City</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="en">Pak Nam Pho</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="en">Pra Bang City</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="en">See Kwae City</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">ปากน้ำโพ</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">เมืองชอนตะวัน</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">เมืองพระบาง</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">เมืองสี่แคว</hasTraditionalNameOfProvince>
+        <hasTree xml:lang="en">Lagerstroemialoudon</hasTree>
+        <hasTree xml:lang="th">เสลา</hasTree>
+        <hasURLOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.nakhonsawan.go.th</hasURLOfProvince>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">นครสวรรค์</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/0/tourism#Phitsanulok -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/0/tourism#Phisanulok">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/0/tourism#ThaiProvince"/>
+        <hasFlower xml:lang="en">Yellow Flamboyant</hasFlower>
+        <hasFlower xml:lang="th">นนทรี</hasFlower>
+        <hasImangeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phisanulok.jpg</hasImangeOfProvince>
+        <hasLatitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.82</hasLatitudeOfProvince>
+        <hasLongitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.27</hasLongitudeOfProvince>
+        <hasMotto xml:lang="en">Great Buddha Chin Na Raj,King Naresuan Birthplace,
+Houseboat in two sides of Nan River,Pure Luscious Dried Banana,Beautiful Caves and Waterfalls</hasMotto>
+        <hasMotto xml:lang="th">พระพุทธชินราชงามเลิศ ถิ่นก้าเนิดพระนเรศวร สองฝั่งน่านล้วนเรือนแพ หวานฉ่ำแท้กล้วยตาก ถ้ำและน้ำตกหลากตระการตา</hasMotto>
+        <hasNameOfProvince xml:lang="en">Phitsanulok</hasNameOfProvince>
+        <hasNameOfProvince xml:lang="th">พิษณุโลก</hasNameOfProvince>
+        <hasSeal xml:lang="en">Image of Buddha Chin Na Raj</hasSeal>
+        <hasSeal xml:lang="th">พระพุทธชินราช</hasSeal>
+        <hasTraditionalNameOfProvince xml:lang="en">Pitlok</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="en">Pra Phitsanulok Song Kwae City</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="en">Song Kwae</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="en">Sra Loung Song Kwae City</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">นครพิษณุโลกสองแคว</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">นครสระหลวงสองแคว</hasTraditionalNameOfProvince>
+        <hasTraditionalNameOfProvince xml:lang="th">สองแคว</hasTraditionalNameOfProvince>
+        <hasTree xml:lang="en">Indian Corck Tree</hasTree>
+        <hasTree xml:lang="th">ปีป</hasTree>
+        <hasURLOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.phitsanulok.go.th</hasURLOfProvince>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">พิษณุโลก</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
